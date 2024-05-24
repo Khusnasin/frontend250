@@ -11,3 +11,171 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* ProfilePage.css */
+.profile-page {
+  width: 60%;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.profile-header {
+  text-align: center;
+  margin: 50px 0 20px; /* Adjusted to create space for the photo to pop out */
+  position: relative;
+  z-index: 1;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 2;
+  background-color: white;
+}
+
+.follow-button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.follow-button:hover {
+  background-color: #0056b3;
+}
+
+
+.profile-stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stat {
+  text-align: center;
+}
+
+.profile-tabs {
+  margin: 20px 0;
+}
+
+.profile-tabs nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.profile-tabs nav button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background: none;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: black; /* Set the font color to black */
+  border-bottom: 2px solid transparent; 
+}
+
+.profile-tabs nav button.active {
+  border-bottom: 2px solid #333;
+  font-weight: bold;
+}
+
+.posts {
+  margin: 20px 0;
+}
+
+.post {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.post-content {
+  margin-bottom: 10px;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.comments-section {
+  margin-top: 10px;
+}
+
+.comment {
+  border-top: 1px solid #eee;
+  padding: 5px 0;
+}
+
+.collaborators {
+  text-align: right;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.collaborator-link {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.unliked {
+  background-color: white;
+  color: #007bff;
+  border: 2px solid #007bff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.unliked:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.liked {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="text"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
